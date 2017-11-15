@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alessanderneal.prelim_project.Color">
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:background="@color/Red"
+        android:text="Red"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <Button
+        android:id="@+id/Green"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Red"
+        android:layout_alignStart="@+id/Red"
+        android:layout_below="@+id/Red"
+        android:layout_marginTop="25dp"
+        android:background="@color/Green"
+        android:text="Green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <Button
+        android:id="@+id/Blue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Red"
+        android:layout_alignStart="@+id/Red"
+        android:layout_below="@+id/Red"
+        android:layout_marginTop="104dp"
+        android:background="@color/Blue"
+        android:text="Blue"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <Button
+        android:id="@+id/int_back"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Blue"
+        android:layout_marginBottom="37dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Back" />
+
+</RelativeLayout>

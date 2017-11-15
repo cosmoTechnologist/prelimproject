@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alessanderneal.prelim_project.logged">
+
+    <Button
+        android:id="@+id/Subtract"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Add"
+        android:layout_alignStart="@+id/Add"
+        android:layout_below="@+id/Add"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/Divide"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Multiply"
+        android:layout_alignStart="@+id/Multiply"
+        android:layout_below="@+id/Multiply"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Divide" />
+
+    <Button
+        android:id="@+id/int2_logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/color"
+        android:layout_marginBottom="46dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <Button
+        android:id="@+id/color"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/int2_logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="settings" />
+
+    <EditText
+        android:id="@+id/op1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addbtn"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/op2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/op1"
+        android:layout_alignStart="@+id/op1"
+        android:layout_below="@+id/op1"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Multiply"
+        android:layout_alignBottom="@+id/Multiply"
+        android:layout_toEndOf="@+id/Divide"
+        android:layout_toRightOf="@+id/Divide"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Multiply"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/op2"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="31dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:text="Multiply" />
+
+    <EditText
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/color"
+        android:layout_alignLeft="@+id/op2"
+        android:layout_alignStart="@+id/op2" />
+
+
+</RelativeLayout>
