@@ -33,7 +33,7 @@ public class login extends AppCompatActivity {
 
                 if(userinput.equals(storeduser) && passinput.equals(storedpass)){
                     Toast.makeText(login.this,"LOGGED IN",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(login.this, logged.class));
+                    startActivity(new Intent(login.this, logged.class));//indi ya ka love
                     finish();
                 } else {
                     Toast.makeText(login.this,"Invalid Login", Toast.LENGTH_SHORT).show();

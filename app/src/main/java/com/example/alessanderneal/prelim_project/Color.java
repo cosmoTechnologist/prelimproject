@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class Color extends AppCompatActivity {
-
-   //Find me
    Button redbtn, greenbtn, bluebtn, backbtn;
 
     @Override
